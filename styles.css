@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap');
+
+:root {
+--color-primary-0: #A85006;	/* Main Primary color */
+--color-primary-1: #E48C43;
+--color-primary-2: #CC6A18;
+--color-primary-3: #863D00;
+--color-primary-4: #5B2900;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x : hidden;
+    background-color: var(--color-primary-1);
+    
+}
+
+#header{
+    background-image: url('header-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.header-text {
+    margin: auto 15px;
+    text-align: left;
+}
+
+#header h1{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 40px;
+    color: #5B2900;
+}
+#header p {
+    color: #5B2900;
+}
+
+#header img {
+    width: 140px;
+    height: 140px;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--color-primary-4);
+    position: sticky;
+    text-align: center;
+    padding: 10px;
+    top: 0px;
+    z-index: 9999999;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+section {
+    margin: 0;
+}
+
+#description {
+    margin: 10px auto;
+}
+
+.coffees {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.desc-text {
+    font-family: 'Shadows Into Light';
+    font-size: 30px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Brew */
+
+#best-menu {
+    background-color: var(--color-primary-2);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#best-menu #text {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+    color: #ffe3e3;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.menu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 70px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--color-primary-1);
+    height: 350px;
+}
+
+.menu h1 {
+    padding: 8px 0 0 0;
+    font-size: 18px;
+}
+
+.price {
+    font-size: 16px;
+}
+
+.menu:hover {
+    transform: scale(1.05);
+}
+
+.menu img {
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+}
+
+/* End Brew */
+
+/* Footer */
+
+#footer {
+    background-color: var(--color-primary-4);
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+#footer .footer-left {
+    width: 30%;
+}
+
+#footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+#footer .footer-left .logo {
+    width: 100%;
+}
+
+#footer .footer-copyright {
+    color: #adadad;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#footer h3 {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: 'Poppins';
+}
+
+#footer .footer-center {
+    width: 35%;
+    padding-top: 4px;
+}
+
+#footer .footer-center p {
+    color: #fff;
+    font-weight: normal;
+}
+
+#footer .footer-center .phone {
+    padding-top: 10px;
+}
+
+#footer .footer-right {
+    width: 35%;
+    padding-left: 50px;
+    text-align: justify;
+}
+
+#footer .footer-right p {
+    color: white;
+}
+
+/* End Footer */
+
+a.nav-link:hover {
+    text-decoration: underline;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
